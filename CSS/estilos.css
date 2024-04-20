@@ -1,0 +1,266 @@
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 5px;
+    background-color: #F4EADE;
+}
+header {
+    background-color: #1E434C; 
+    color: #fff; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo
+{
+    font-family: roboto;
+    font-style: italic;
+    font-weight: bold;
+    font-size: xx-large;
+    color: #C99E10;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+a {
+    color: #C99E10;
+    text-decoration: none;
+}
+nav ul li a:hover {
+
+    color: white;
+    
+}  
+/* Estilos para el menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1E434C;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #C99E10;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.titulo{
+    text-align: center;
+    color: #1E434C;
+    font-size: xx-large; 
+}
+/*Carrusel*/
+.carrusel{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slides{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 300%;
+    animation: slideshow 5s infinite alternate ease-in-out;
+}
+
+.slides li{
+    width: 33.33%;
+    float: left;
+}
+.slideTexto{
+    position: absolute;
+    padding: 0 10%;
+    text-align: center;
+    top: 50%;
+    color:#333;
+    transform: translateY(-50%);
+}
+.slideTexto h2{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.carrusel img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/* Estilos específicos de las tarjetas */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea si no caben en el ancho de la pantalla */
+    gap: 10px; /* Espacio entre las tarjetas */
+
+}
+.card {
+    flex: 1 1 300px; /* Establece el tamaño mínimo, máximo y preferido de las tarjetas */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    width: 300px; /* Ajusta el ancho según sea necesario */
+    height: 400px; /* Ajusta la altura según sea necesario */
+    perspective: 1000px;
+    margin: 20px; /* Espacio entre las tarjetas */
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: #fff; /* Color del frente de la tarjeta */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    background-color: #fff; /* Color del dorso de la tarjeta */
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2, p {
+    margin: 0;
+}
+
+.card .front img {
+    width: 300px; /* Ancho de la imagen */
+    height: 300px; /* Altura de la imagen */
+    margin-bottom: 10px;
+}
+.containerForm {
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 0 0 30%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-check {
+    margin-bottom: 5px;
+}
+
+.btn {
+    margin-top: 15px;
+}
+.seccionTituloInferior{
+    margin: 25px;
+}
+
+.seccionBodyInferior{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 25em;
+}
+
+.seccionTextoInferior{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.secciontexto{
+    width: 50%;
+}
+
+.seccioniframe{
+    width: 50%;
+    text-align: center;
+}
+
+footer {
+    background-color: #1E434C; 
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+}
+.botonEnlaces{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+@keyframes slideshow {
+    0% { margin-left: 0; }
+    33.33% { margin-left: 0; }
+    66.66% { margin-left: -100%; }
+    100% { margin-left: -100%; }
+}
+  /* Media queries */
+@media (max-width: 768px) {
+    .form-group {
+        flex: 0 0 100%;
+    }
+}
