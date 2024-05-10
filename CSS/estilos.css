@@ -309,6 +309,10 @@ input[type="submit"]:hover {
 
 .secciontexto{
     width: 50%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    
 }
 
 .seccioniframe{
