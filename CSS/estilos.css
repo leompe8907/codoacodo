@@ -33,6 +33,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    
 }
 
 nav ul li {
@@ -46,8 +47,10 @@ a {
     text-decoration: none;
 }
 nav ul li a:hover {
+
     color: white;
-}
+    
+}  
 /* Estilos para el menú desplegable */
 .dropdown-content {
     display: none;
@@ -72,34 +75,36 @@ nav ul li a:hover {
 .titulo{
     text-align: center;
     color: #1E434C;
-    font-size: xx-large;
+    font-size: xx-large; 
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 /*Carrusel*/
 .carrusel{
-    position: relative;
+    
     width: 100%;
-    height: auto;
+    height: 100vh;
     overflow: hidden;
+    margin: 20px 10px 20px 10px;
 }
 
-.slides{
+.slide{
     display: flex;
-    margin: 0;
-    padding: 0;
     width: 300%;
-    animation: slideshow 5s infinite alternate ease-in-out;
+    animation: slideshow 20s infinite;
 }
 
-.slides li{
+.slide li{
     width: 33.33%;
     float: left;
+    position: relative;
 }
 .slideTexto{
     position: absolute;
     padding: 0 10%;
     text-align: center;
     top: 50%;
-    color:#333;
+    color:#F4EADE;
     transform: translateY(-50%);
 }
 .slideTexto h2{
@@ -107,7 +112,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 .carrusel img{
-    width: 100%;
+    width: 100vw;
     height: auto;
     object-fit: cover;
 }
