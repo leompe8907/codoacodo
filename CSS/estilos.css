@@ -328,15 +328,74 @@ footer {
     margin-right: 10px;
     
 }
+/*Animacion del carrousel*/
 @keyframes slideshow {
+    /*0% { margin-left: 0; }
+    33.33% { margin-left: -100%; }
+    66.66% { margin-left: -200%; }
+    100% { margin-left: 0%; }*/
     0% { margin-left: 0; }
-    33.33% { margin-left: 0; }
-    66.66% { margin-left: -100%; }
-    100% { margin-left: -100%; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+   50% { margin-left: -200%; }
+   70% { margin-left: -200%; }
+
+   75% { margin-left: 0%; }
+   100% { margin-left: 0%; }
+   
+
 }
   /* Media queries */
-@media (max-width: 768px) {
+@media (max-width: 425px) {
     .form-group {
         flex: 0 0 100%;
+
+    }
+    font-size: 0.5em;
+
+    /* Centrar imágenes */
+    .carrusel img {
+        width: 100%;
+        height: auto;
+        object-fit: contain; /* Cambiar a 'contain' para ajustar la imagen dentro del contenedor */
+    }
+    .nav ul {
+        display: block;
+    } 
+
+    .titulo{
+        text-align: center;
+        color: #1E434C;
+        font-size: small;
+        
+    }
+    /* Cards ocupan una sola columna */   
+    .card {
+        flex: 0 0 100%;
+    }
+
+    /* Achicar textos y títulos */
+    .titulo {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 0.8em;
+    }
+    /* Contenido de la sección "Nosotros" en una sola columna */
+    .seccionBodyInferior {
+        flex-direction: column;
+    }
+
+    /* Ajuste del ancho de la sección de texto y del iframe */
+    .seccionTextoInferior {
+        width: 100%;
+    }
+    .seccioniframe .cajitaIframe {
+        width:200px;
+        height:200px;
+        
     }
 }
