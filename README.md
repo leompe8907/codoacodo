@@ -2,19 +2,6 @@ Descripción.
 
 Turismo+Adventure en Argentina es un sitio web que promueve diversas experiencias de turismo de aventura en Argentina, incluyendo actividades por tierra, aire y agua. Este sitio proporciona información detallada sobre cada tipo de actividad, así como una sección de contacto para los interesados en obtener más información o reservar una experiencia.
 
-Estructura del Proyecto.
-
-El proyecto está organizado de la siguiente manera:
-/
-├── CSS/
-│   ├── estilos.css
-├── assets/
-│   ├── imagenes/
-│   ├── Actividades/
-├── js/
-│   ├── script.js
-├── index.html
-
 Archivos y Directorios.
 
 index.html: Archivo principal que contiene la estructura del sitio web.
