@@ -282,6 +282,31 @@ nav ul li a:hover {
     color: white;
 }
 
+.containerSocial{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: normal;
+    box-sizing: border-box;
+    font-family: "Lato", arial, sans-serif;
+}
+
+.galeriContainer{
+    margin: 0px -4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    position: relative;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.galery{
+    display: flex;
+}
+
+.galeryRow{
+
+}
+
 /* Estilos para el formulario */
 
 #PageContacto{
