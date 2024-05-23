@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="./CSS/estilos.css">
     <link rel="icon" href="/assets/imagenes/senderismo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/experiencias.js"></script>
+    <script src="/js/aleatorio_img.js"></script>
     <title>Turismo+Adventure en Argentina</title>
 </head>
 
@@ -22,16 +24,15 @@
         <nav>
             <ul>
                 <li><a href="#PageInicial">Inicio</a></li>
+                <li><a href="#PageNosotros">Nosotros</a></li>
                 <li class="dropdown"><a href="#Experiencias">Experiencias</a></li>
                 <li><a href="#PageContacto">Contacto</a></li>
-                <li><a href="#PageNosotros">Nosotros</a></li>
             </ul>
         </nav>
     </header>
     <main>
          <!-- Comienza la seccion página inicio -->
         <section id="PageInicial">
-            <h2 class="titulo">Iniciando la aventura</h2>
              <!-- carrousel de imagenes con texto -->
             <div class="carrusel">
                 <ul class="slide">
@@ -58,6 +59,26 @@
                     </li>
                 </ul>
             <div>
+        </section>
+
+        <!-- Nosotros -->
+        <section id="PageNosotros" class="buttonNosotros">
+            <div class="nosotros">
+              <div class="tex-nosotros">
+                <div class="tittle-text-nosotros">
+                  <span> bienvenido a</span>
+                  <p> turismo + aventura </p>
+                </div>
+                <div class="content-nosotros">
+                  <p class="text">tu puerta de entrada a experiencias inolvidables en los destinos más espectaculares del mundo. Ya sea que sueñes con explorar ciudades vibrantes, relajarte en playas paradisíacas, sumergirte en la naturaleza o descubrir culturas exóticas,nuestros destinos están cuidadosamente seleccionados para ofrecerte lo mejor de cada rincón del planeta. Ya sea que busques relajarte en un resort de lujo, explorar ciudades históricas o aventurarte en la naturaleza salvaje, tenemos el viaje perfecto para ti.</p>
+                  <p class="text"> En <b>Turismo + Aventura </b>, nos enorgullecemos de ofrecer experiencias que van más allá del turismo convencional. Participa en excursiones guiadas por expertos locales, disfruta de degustaciones gastronómicas exclusivas, y sumérgete en la cultura y tradiciones de cada lugar que visites. Nuestro objetivo es que vivas cada destino de una manera auténtica y enriquecedora. </p>
+                  <p class="text">Sabemos que cada viajero es único, por eso personalizamos cada uno de nuestros tours para adaptarnos a tus intereses y preferencias. Nuestro equipo de expertos en viajes está disponible las 24 horas para asesorarte y ayudarte a planificar cada detalle de tu aventura. Desde la selección de los vuelos y hoteles hasta las actividades y excursiones, nos encargamos de todo para que tú solo te preocupes de disfrutar.</p>
+                  <p class="text">¿Qué estás esperando? Embárcate en un viaje único con <b> Turismo x Aventura </b> y descubre todo lo que el mundo tiene para ofrecer.</p>
+                </div>
+              </div>
+              <div class="img-nosotros">
+              </div>
+            </div>
         </section>
 
         <!-- Comienza la seccion experiencias con cards animadas-->
@@ -124,7 +145,7 @@
             </div>
             <div class="containerSocial">
                 <div class="galeriContainer">
-                    <div class="galery"></div>
+                    <div class="gallery"></div>
                 </div>
             </div>
         </section>
@@ -199,42 +220,47 @@
                 </div>
             </div>
         </section>
-        
-        <!-- Nosotros -->
-        <section id="PageNosotros">
-            <div class="seccionGeneralInferior">
-                <div class="seccionTituloInferior">
-                    <h2 class="titulo">Nosotros</h2>
-                </div>
-                <div class="seccionBodyInferior">
-                    <div class="seccionTextoInferior">
-                        <div class="secciontexto">
-                            <h3>Viajamos y vivimos experiencias extremas junto a vos</h3>
-                            <p>Somos un grupo dedicado a hacer posible la experiencia de realizar un deporte extremo y recorrer la Argentina buscando los mejores lugares para realizarlos.
-                                                        Al mismo tiempo que viajas, conoces lugares y realizas distintas experiencias en contacto con la naturaleza. 
-                                                       Buscamos opciones exclusivas para cada persona incluyendo alojamiento, traslados, guias especializados y todo lo que necesites adaptado a tu presupuesto.
-                                                       No dudes en contactarnos para hacer realidad tu experiencia soñada !!
-                            </p>
-                        </div>
-                    </div>
-                    <div class="seccioniframe">
-                        <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.477375703442!2d-57.95238728518376!3d-34.919562781784244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e6255784fd2d%3A0x26323acd23bad4ce!2sC.%2054%20%26%20C.%2010%2C%20B1904%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1665148821990!5m2!1ses!2sar"
-                        width="400" height="300" style="border:0;" allowfullscreen loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
+
     <!-- Footer con enlaces a redes sociales -->
     <footer>
-        <div>
-            <a class="botonEnlaces" href="#"><img src="./assets/imagenes/gmail.png" alt="Correo" width="20"></a>
-            <a class="botonEnlaces" href="#"><img src="./assets/imagenes/facebook (4).png" alt="Facebook" width="20"></a>
-            <a class="botonEnlaces" href="#"><img src="./assets/imagenes/instagram.png" alt="instagram" width="20"></a>
-            <a class="botonEnlaces" href="#"><img src="./assets/imagenes/whatsapp.png" alt="whatsApp" width="20"></a>
+        <div class="contentRedes">
+            <p>DESCUBRE MAS DE NOSOTROS EN</p>
+            <ul class="socialLinks">
+                <li class="socialNetwork">
+                    <a href="" class="socialLink">
+                        <i class="social-icon fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="socialNetwork">
+                    <a href="" class="socialLink">
+                        <i class="social-icon fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="socialNetwork">
+                    <a href="" class="socialLink">
+                        <i class="social-icon fab fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li class="socialNetwork">
+                    <a href="" class="socialLink">
+                        <i class="social-icon fab fa-tiktok"></i>
+                    </a>
+                </li>
+                <li class="socialNetwork">
+                    <a href="" class="socialLink">
+                        <i class="social-icon fab fa-facebook-f"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="seccioniframe">
+            <P>ENCUENTRANOS EN</P>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.477375703442!2d-57.95238728518376!3d-34.919562781784244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e6255784fd2d%3A0x26323acd23bad4ce!2sC.%2054%20%26%20C.%2010%2C%20B1904%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1665148821990!5m2!1ses!2sar"
+            width="300" height="300" style="border:0;" allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </footer>
     <a href="https://www.flaticon.es/iconos-gratis/turismo" title="turismo iconos">Turismo iconos creados por edt.im -

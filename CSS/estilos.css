@@ -281,30 +281,69 @@ nav ul li a:hover {
 .socialLinks a{
     color: white;
 }
+/*  */
 
 .containerSocial{
-    font-size: 14px;
-    font-weight: normal;
-    line-height: normal;
-    box-sizing: border-box;
-    font-family: "Lato", arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.galeriContainer{
-    margin: 0px -4px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    position: relative;
-    font-size: inherit;
-    font-weight: inherit;
-}
-
-.galery{
+.gallery {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las imágenes */
 }
 
-.galeryRow{
+.image-container {
+    position: relative;
+    width: 200px; /* Ancho fijo para cada imagen */
+    height: 200px; /* Alto fijo para cada imagen */
+    overflow: hidden; /* Esconder el contenido que se sale del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s ease; /* Animación de transformación */
+}
 
+.image-container:hover {
+    transform: scale(1.05); /* Aumentar el tamaño en hover */
+}
+
+.gallery-img {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 100%; /* Alto completo del contenedor */
+    object-fit: cover; /* Ajustar la imagen para cubrir el contenedor */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .fab {
+    font-size: 2em; /* Tamaño del icono */
+}
+
+.name {
+    margin-top: 10px;
+    font-size: 1.2em;
+    text-align: center; /* Centrar el texto */
 }
 
 /* Estilos para el formulario */
@@ -454,64 +493,93 @@ nav ul li a:hover {
 
 /* Estilo para mensaje de éxito */
 .success {
-    color: green;
+    color: rgb(112, 133, 112);
     font-weight: bold;
     margin-top: 10px;
     text-align: center;
 }
 
-----------------------------------------------------------
+/* ---------------------------------------------------------- */
 
 
-.seccionTituloMedio{
-    margin: 15px;
-}
-
-
-.seccionTituloInferior{
-    margin: 25px;
-}
-
-.seccionBodyInferior{
-    display: flex;
-    flex-direction: row;
+.nosotros{
+    margin: 0 auto;
+    display: grid;
     align-items: center;
-    justify-content: space-evenly;
+    max-width: 1240px;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: auto 1fr;
+}
+
+.tex-nosotros{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    padding: 0px 35px;
+    background: #ffffff00;
+}
+
+.tittle-text-nosotros{
+    margin-bottom: 20px;
+}
+
+.tittle-text-nosotros span{
+    display: block;
+    font-family: 'Poppins';
+    font-size: 45px;
+    color: blue;
+    letter-spacing: 1px;
+    line-height: .8em;
+    transform: translateX(-20px);
+}
+
+.tittle-text-nosotros p{
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content-nosotros{
     width: 100%;
-    height: 25em;
 }
 
-.seccionTextoInferior{
-    width: 50%;
-    display: flex;
-    justify-content: center;
+.content-nosotros p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    line-height: 28px;
+    margin-bottom: 30px;
+    text-rendering: optimizeLegibility;
 }
 
-.secciontexto{
-    width: 50%;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    
+.img-nosotros{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    padding: 0 20px 0 40px;
+    background: transparent;
 }
 
-.seccioniframe{
-    width: 50%;
-    text-align: center;
+.img-nosotros img{
+    position: relative;
+    width: 100%;
+    max-width: 622px;
+    display: block;
 }
+
+
+/*  */
 
 footer {
-    background-color: #1E434C; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5a5a5a; 
     color: #fff; 
     padding: 20px;
     text-align: center;
+    font-family: cursive;
 }
-.botonEnlaces{
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    
-}
+
 /*Animacion del carrousel*/
 
 @keyframes slideshow {
