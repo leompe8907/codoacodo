@@ -173,6 +173,7 @@ nav ul li a:hover {
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
+    padding: 5px
 }
 
 .front {
@@ -189,6 +190,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px
 }
 
 h2, p {
@@ -558,3 +560,4 @@ footer {
         width: auto;
     }
 }
+.text-back{text-align: justify;}
